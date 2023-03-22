@@ -79,7 +79,10 @@ function generateTemplate() {
     
     //Inserisci i dati dall'array di oggetti ed ogni volta appendi la col clonandola
     for (i = 0; i < staff.length; i++) {
-        cardTitle.textContent = `${staff[i].firstName}`
+        const member = staff[i];
+        cardTitle.textContent = `${member.firstName + " " + member.surname}`
+        cardText.textContent = `${member.role}`;
+        img.src = `img/${member.image}`;
         row.appendChild(col.cloneNode(true));
     }
     
