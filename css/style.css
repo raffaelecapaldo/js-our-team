@@ -1,0 +1,8 @@
+.card:hover .card-body, .card-img-top{
+    background-color: rgba(21, 65, 184, 0.5);
+    cursor:pointer;
+}
+
+#lorem {
+    color:rgb(114, 50, 63);
+}
