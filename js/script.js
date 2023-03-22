@@ -54,4 +54,39 @@ function generateTemplate() {
 
         },
     ]
+    //Crea template bootstrap 
+    const container = document.getElementById("maincontent");
+    const row = document.createElement("div");
+    const col = document.createElement("div");
+    const card = document.createElement("div");
+    const img = document.createElement("img");
+    const cardBody = document.createElement("div");
+    const cardTitle = document.createElement("h5");
+    const cardText = document.createElement("p");
+    col.appendChild(card);
+    card.appendChild(img);
+    card.appendChild(cardBody);
+    cardBody.appendChild(cardTitle);
+    cardBody.appendChild(cardText);
+    row.classList.add("row");
+    col.classList.add("col-4");
+    card.classList.add("card");
+    card.style.width = "18rem";
+    img.classList.add("card-img-top");
+    cardBody.classList.add("card-body");
+    cardTitle.classList.add("card-title");
+    cardText.classList.add("card-text");
+    
+    //Inserisci i dati dall'array di oggetti ed ogni volta appendi la col clonandola
+    for (i = 0; i < staff.length; i++) {
+        cardTitle.textContent = `${staff[i].firstName}`
+        row.appendChild(col.cloneNode(true));
+    }
+    
+    container.appendChild(row);//Appendi la row completa al container
+
+
 }
+
+generateTemplate();
+
