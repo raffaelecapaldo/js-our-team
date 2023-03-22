@@ -74,7 +74,7 @@ function generateTemplate() {
     card.style.width = "18rem";
     img.classList.add("card-img-top");
     cardBody.classList.add("card-body");
-    cardTitle.classList.add("card-title");
+    cardTitle.classList.add("card-title", "fs-4");
     cardText.classList.add("card-text");
     
     //Inserisci i dati dall'array di oggetti ed ogni volta appendi la col clonandola

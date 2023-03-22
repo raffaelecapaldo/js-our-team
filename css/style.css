@@ -4,5 +4,15 @@
 }
 
 #lorem {
-    color:rgb(114, 50, 63);
+    color:#170642;
+}
+
+header {
+    background-color: #4465ad;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-body {
+    background-color: #f4f4f4;
 }
