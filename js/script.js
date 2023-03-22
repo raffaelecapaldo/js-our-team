@@ -69,7 +69,7 @@ function generateTemplate() {
     cardBody.appendChild(cardTitle);
     cardBody.appendChild(cardText);
     row.classList.add("row");
-    col.classList.add("col-4");
+    col.classList.add("col-12", "col-lg-4", "col-md-6", "d-flex", "justify-content-center", "pb-3");
     card.classList.add("card");
     card.style.width = "18rem";
     img.classList.add("card-img-top");
